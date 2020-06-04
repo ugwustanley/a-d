@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>start quiz</title>
+</head>
+<body>
+    <div class="box">
+        <div id="appe">
+        <span class="appear" id="scor"><h2>Your Score</h2></span>
+        <span id="update1" class="adds">0</span>
+        <button class="back" onclick="window.location.href='./index.html'">Back</button>
+    </div>
+        <div id="ne">
+        <div class="qno">
+            <div class="number">Question <span id="noo">1</span>/5</div>
+            <div class="bar"><div id="pro"></div></div>
+           
+        </div>
+        <div class="scores">
+            <span class="score">score</span>
+            <span class="add" id="add">0</span>
+            
+        </div>
+        <div class="qbox" id="qone">
+            <div class="quest" id="questionb"><b>where did covid19 originate form</b></div>
+            <div class="ans" id="clean">
+                <div class="op1" >
+                    <div class="a">A</div>
+                    <div class="answer"  id="ans1" onclick="answers1(event)">Berlin germany</div>
+                </div>
+                <div class="op1" >
+                    <div class="a">B</div>
+                    <div class="answer" id="ans2" onclick="answers1(event)">Lagos Nigeria</div>
+                </div>
+                <div class="op1">
+                    <div class="a">C</div>
+                    <div class="answer" id="ans3"  onclick="answers1(event)">wuhan china</div>
+                </div>
+                <div class="op1">
+                    <div class="a">D</div>
+                    <div class="answer" id="ans4" onclick="answers1(event)">Shanghai China</div>
+                </div>
+            </div>
+            <button class="next" id="next" onclick="nexts()">Next</button>
+            <span id="curr">2</span>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
